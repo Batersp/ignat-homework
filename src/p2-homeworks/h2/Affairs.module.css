@@ -1,0 +1,32 @@
+
+.second {
+    display: grid;
+    width: 500px;
+    padding: 5px;
+    background-color: bisque;
+}
+
+.obj {
+    grid-area: 1/1/2/2;
+    width: 200px;
+    color: darkred;
+    font-weight: bold;
+}
+
+.filt {
+    grid-area: 1/2/2/3;
+    width: 200px;
+    color: red;
+    font-weight: bold;
+
+}
+
+.btn {
+    grid-area: 1/3/2/4;
+background-color: bisque;
+}
+
+.btnfilter {
+    background-color: darkviolet;
+
+}

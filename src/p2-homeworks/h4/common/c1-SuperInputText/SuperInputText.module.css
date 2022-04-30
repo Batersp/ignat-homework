@@ -1,0 +1,16 @@
+.superInput {
+    background: pink;
+
+}
+
+.errorInput {
+    border: 3px solid lime;
+    background: darkviolet;
+}
+
+.error {
+    color: red;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+}
