@@ -1,0 +1,49 @@
+.okno {
+    position: relative;
+    left: -200px;
+    width: 220px;
+    background: pink;
+    transition: left .2s linear;
+    word-spacing: 10px;
+
+}
+
+.okno:hover {
+    left: 0px;
+}
+
+
+.preJunior {
+    color: darkred;
+    text-decoration: none;
+}
+
+.preJunior:hover {
+    color: darkviolet;
+}
+
+
+
+
+.junior {
+    color: darkred;
+    text-decoration: none;
+}
+
+.junior:hover {
+    color: darkviolet;
+}
+
+
+.juniorplus {
+    color: darkred;
+    text-decoration: none;
+}
+
+.juniorplus:hover {
+    color: darkviolet;
+}
+
+
+
+
