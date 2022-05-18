@@ -1,0 +1,19 @@
+.per {
+    color: red;
+    display: flex;
+}
+
+.per::before {
+    content: '';
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIFd6cqDeLJlP2k6VqOgEMWKdFRhc5-tKaA&usqp=CAU");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 20px;
+    height: 20px;
+}
+
+.per:hover:before {
+    background-color: gold;
+}
+

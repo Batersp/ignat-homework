@@ -1,0 +1,9 @@
+.option {
+    background-color: darkviolet;
+    color: gold;
+}
+
+.option:checked {
+    background-color: black;
+    color: blue;
+}

@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    padding: 5px;
+    background-color: darkviolet;
+
+}
+
+.name {
+    display: block;
+    width: 200px;
+    color: white;
+}
+
+.age {
+    display: block;
+    color: white;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
