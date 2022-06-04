@@ -5,7 +5,7 @@ function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
     const [date, setDate] = useState<Date>(new Date())
     const [show, setShow] = useState<boolean>(false)
-    const [t, setT] = useState(false)
+
 
     const stop = () => {
         clearInterval(timerId) // stop
@@ -17,7 +17,6 @@ function Clock() {
 
         }, 1000)
         setTimerId(id)
-        setT(true)
     }
 
     const onMouseEnter = () => {
@@ -27,17 +26,20 @@ function Clock() {
         setShow(false) // close
     }
 
-    const stringTime = t ? [date.getHours() < 10 ? '0' + date.getHours() : date.getHours(),
+    const stringTime = date?.toLocaleTimeString() || <br/>
+
+    /*t ? [date.getHours() < 10 ? '0' + date.getHours() : date.getHours(),
             ':',
             date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes(),
             ':',
             date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds()] :
-        ''// fix with date
-    const stringDate = [date.getDate() < 10 ? '0' + date.getDate() : date.getDate(),
+        ''*/// fix with date
+    const stringDate = date?.toLocaleDateString() || <br/>
+    /*[date.getDate() < 10 ? '0' + date.getDate() : date.getDate(),
         '.',
         date.getUTCMonth() < 10 ? '0' + date.getUTCMonth() : date.getUTCMonth(),
         '.',
-        date.getFullYear()] // fix with date
+        date.getFullYear()]*/ // fix with date
 
     return (
         <div>
@@ -48,11 +50,12 @@ function Clock() {
                 {stringTime}
             </div>
 
-            {show && (
+            {show ? (
                 <div>
                     {stringDate}
                 </div>
-            )}
+            ) : (<br/>)
+            }
 
             <SuperButton onClick={start}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>
